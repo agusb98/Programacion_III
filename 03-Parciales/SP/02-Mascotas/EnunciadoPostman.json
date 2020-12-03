@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "f0e4e08f-fe00-4ddf-a631-cde65bbb9ba3",
+		"name": "P3 Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "D",
+			"item": [
+				{
+					"name": "Punto 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "pepe",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "cliente",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "pepe@mail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}users",
+							"host": [
+								"{{url}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}login",
+							"host": [
+								"{{url}}login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mascota",
+									"value": "perro",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "300",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}mascota",
+							"host": [
+								"{{url}}mascota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 4",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tipo",
+									"value": "perro",
+									"type": "text"
+								},
+								{
+									"key": "fecha",
+									"value": "13/12/2020",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}turno/4",
+							"host": [
+								"{{url}}turno"
+							],
+							"path": [
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 5",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}turnos",
+							"host": [
+								"{{url}}turnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "turno",
+									"value": "ATENDIDO",
+									"type": "text"
+								},
+								{
+									"key": "idTurno",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}turno/4",
+							"host": [
+								"{{url}}turno"
+							],
+							"path": [
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}mascota",
+							"host": [
+								"{{url}}mascota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}turnos/4",
+							"host": [
+								"{{url}}turnos"
+							],
+							"path": [
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
