@@ -1,2 +1,0 @@
-O:4:"Auto":4:{s:8:"_patente";s:6:"KZQ452";s:6:"_marca";s:7:"renault";s:6:"_color";s:5:"verde";s:7:"_precio";d:145200;}
-O:4:"Auto":4:{s:8:"_patente";s:6:"SDF229";s:6:"_marca";s:7:"Ferrari";s:6:"_color";s:8:"Amarillo";s:7:"_precio";d:121000;}

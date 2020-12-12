@@ -1,1 +1,0 @@
-[{"_patente":"KZQ451","_marca":"renault","_color":"verde","_precio":145200},{"_patente":"KZQ451","_marca":"renault","_color":"verde","_precio":145200},{"_patente":"KZQ451","_marca":"renault","_color":"verde","_precio":145200},{"_patente":"SDF229","_marca":"Ferrari","_color":"Amarillo","_precio":121000},{"_patente":"KZQ452","_marca":"renault","_color":"verde","_precio":145200}]
